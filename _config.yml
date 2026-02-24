@@ -1,0 +1,85 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Genesis's Cyber Blog
+#email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Empowering the community with cybersecurity knowledge—from fundamental concepts to advanced security tools and real-world technical analysis.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://iamgenesis09.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: iamgenesis1109
+github_username:  iamgenesis09
+
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"  # Latest stable version (Jul 2025 tak)
+# Build settings
+plugins:
+  - jekyll-feed        # yeh rakh sakta hai agar feed chahiye
+  - jekyll-include-cache  # yeh MUST hai Minimal Mistakes ke liye
+minimal_mistakes_skin: "dark"  # Ya "neon", "contrast" try kar agar pasand na aaye
+author:
+  name: "Genesis's Cyber Blog"  # Tera naam
+  avatar: "/assets/images/avatar.jpg"  # Photo upload kar baad mein (repo mein /assets/images/ folder bana ke)
+  bio: "Beginner Ethical Hacker | TryHackMe & CTF Enthusiast | Gandhinagar, Gujarat"  # Short bio jaise 0xRick
+  location: "Paradise Island"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/iamgenesis09"
+    - label: "Twitter/X"
+      icon: "fab fa-fw fa-twitter"
+      url: "https://twitter.com/iamgenesis1109"  # Tera twitter_username se liya
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true  # Profile sidebar mein show
+      read_time: true       # Reading time show
+      comments: true        # Comments enable (agar chahiye)
+      share: true           # Share buttons
+      related: true         # Related posts
+      sidebar:
+        nav: "main"         # Sidebar mein navigation menu (neeche banayenge)
+  - scope:
+      path: ""
+    values:
+      sidebar:
+        nav: "main"         # Home aur baaki pages pe sidebar
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
